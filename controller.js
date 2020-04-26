@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 	$.ajaxSetup({ cache: false });
 
-	$.getJSON('data.json'), function (data) {
+	$.getJSON('data.json', function (data) {
 		var quizitems = data.quizlist[0].quizitems;
 		numberOfQuestions = quizitems.length;
 		for (i = 0; i < quizitems.length; i++) {
