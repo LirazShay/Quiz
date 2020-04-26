@@ -7,7 +7,7 @@ $(document).ready(function () {
 	var gamePosition;
 	var score;
 
-	$.getJSON('data.json', function (data) {
+	$.getJSON('Data.json', function (data) {
 		var quizitems = data.quizlist[0].quizitems;
 		numberOfQuestions = quizitems.length;
 		for (i = 0; i < quizitems.length; i++) {
