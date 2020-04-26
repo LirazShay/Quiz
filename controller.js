@@ -7,8 +7,6 @@ $(document).ready(function () {
 	var gamePosition;
 	var score;
 
-	$.ajaxSetup({ cache: false });
-
 	$.getJSON('data.json', function (data) {
 		var quizitems = data.quizlist[0].quizitems;
 		numberOfQuestions = quizitems.length;
@@ -22,7 +20,7 @@ $(document).ready(function () {
 		resetGame();
 		updateQuestion();
 
-	})//getJSON
+	});//getJSON
 
 function resetGame() {
 	currentQuestionNumber = 0;
